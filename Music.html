@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" type="text/css" href="Music.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+
+<header>
+
+  <!-- barra de nav-->
+  <nav>
+    <div class="logo">Música</div>
+    <div class="search">
+      <input type="text" id="search-input" placeholder="Buscar">
+      <button id="search-button">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+          </svg>
+      </button>
+    </div>
+  </nav>
+  <canvas class="background"></canvas>
+<!-- Slider de Musica donde se muestra Los albumnes mas releavantes del momento -->
+  <div class="slider-container">
+    <div class="slider">
+      <div class="slide">
+        <div class="slide-content">
+          <h2>Real hasta la Muerte</h2>
+          <p>Anuel AA</p>
+        </div>
+        <img src="https://cdn.pixabay.com/photo/2022/12/13/19/05/cyberpunk-7654046_1280.jpg" alt="Imagen 1">
+      </div>
+      <div class="slide">
+        <div class="slide-content">
+          <h2>Positions</h2>
+          <p>Ariana Grande</p>
+        </div>
+        <img src="https://cdn.pixabay.com/photo/2020/04/14/14/16/digital-art-5042881_1280.jpg" alt="Imagen 2">
+      </div>
+      <div class="slide">
+        <div class="slide-content">
+          <h2>Meet The Woo</h2>
+          <p>Pop Smoke</p>
+        </div>
+        <img src="https://wallpapercave.com/wp/wp5607193.jpg" alt="Imagen 3">
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<!-- Inicio del Main-->
+<main>
+
+  <!-- Secciòn de Destacados-->
+  <div class="featured-section">
+    <h2 class="section-title">Destacados</h2>
+    <canvas class="background"></canvas>
+    <div class="featured-carousel"  id="carousel-destacados">
+      <div class="carousel-item">
+        <img src="https://cdn.pixabay.com/photo/2022/12/13/19/05/cyberpunk-7654046_1280.jpg" alt="Imagen 1">
+        <p class="carousel-item-title">Título de la canción 1</p>
+        <p class="carousel-item-artist">Artista 1</p>
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.pixabay.com/photo/2020/04/14/14/16/digital-art-5042881_1280.jpg" alt="Imagen 2">
+        <p class="carousel-item-title">Título de la canción 2</p>
+        <p class="carousel-item-artist">Artista 2</p>
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.pixabay.com/photo/2021/09/15/01/41/demon-6625444_1280.jpg" alt="Imagen 3">
+        <p class="carousel-item-title">Título de la canción 2</p>
+        <p class="carousel-item-artist">Artista 2</p>
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.pixabay.com/photo/2022/12/13/19/05/cyberpunk-7654046_1280.jpg" alt="Imagen 1">
+        <p class="carousel-item-title">Título de la canción 2</p>
+        <p class="carousel-item-artist">Artista 2</p>
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.pixabay.com/photo/2020/04/14/14/16/digital-art-5042881_1280.jpg" alt="Imagen 2">
+        <p class="carousel-item-title">Título de la canción 2</p>
+        <p class="carousel-item-artist">Artista 2</p>
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.pixabay.com/photo/2021/09/15/01/41/demon-6625444_1280.jpg" alt="Imagen 3">
+        <p class="carousel-item-title">Título de la canción 2</p>
+        <p class="carousel-item-artist">Artista 2</p>
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.pixabay.com/photo/2022/12/13/19/05/cyberpunk-7654046_1280.jpg" alt="Imagen 1">
+        <p class="carousel-item-title">Título de la canción 1</p>
+        <p class="carousel-item-artist">Artista 1</p>
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.pixabay.com/photo/2020/04/14/14/16/digital-art-5042881_1280.jpg" alt="Imagen 2">
+        <p class="carousel-item-title">Título de la canción 2</p>
+        <p class="carousel-item-artist">Artista 2</p>
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.pixabay.com/photo/2021/09/15/01/41/demon-6625444_1280.jpg" alt="Imagen 3">
+        <p class="carousel-item-title">Título de la canción 2</p>
+        <p class="carousel-item-artist">Artista 2</p>
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.pixabay.com/photo/2022/12/13/19/05/cyberpunk-7654046_1280.jpg" alt="Imagen 1">
+        <p class="carousel-item-title">Título de la canción 2</p>
+        <p class="carousel-item-artist">Artista 2</p>
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.pixabay.com/photo/2020/04/14/14/16/digital-art-5042881_1280.jpg" alt="Imagen 2">
+        <p class="carousel-item-title">Título de la canción 2</p>
+        <p class="carousel-item-artist">Artista 2</p>
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.pixabay.com/photo/2021/09/15/01/41/demon-6625444_1280.jpg" alt="Imagen 3">
+        <p class="carousel-item-title">Título de la canción 2</p>
+        <p class="carousel-item-artist">Artista 2</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+    <!-- Para Ti-->
+    <div class="featured-section">
+      <h2 class="section-title">Para ti</h2>
+      <canvas class="background"></canvas>
+      <div class="featured-carousel"  id="carousel-parati">
+        <div class="carousel-item">
+          <img src="https://cdn.pixabay.com/photo/2022/12/13/19/05/cyberpunk-7654046_1280.jpg" alt="Imagen 1">
+          <p class="carousel-item-title">Título de la canción 1</p>
+          <p class="carousel-item-artist">Artista 1</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.pixabay.com/photo/2020/04/14/14/16/digital-art-5042881_1280.jpg" alt="Imagen 2">
+          <p class="carousel-item-title">Título de la canción 2</p>
+          <p class="carousel-item-artist">Artista 2</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.pixabay.com/photo/2021/09/15/01/41/demon-6625444_1280.jpg" alt="Imagen 3">
+          <p class="carousel-item-title">Título de la canción 2</p>
+          <p class="carousel-item-artist">Artista 2</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.pixabay.com/photo/2022/12/13/19/05/cyberpunk-7654046_1280.jpg" alt="Imagen 1">
+          <p class="carousel-item-title">Título de la canción 2</p>
+          <p class="carousel-item-artist">Artista 2</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.pixabay.com/photo/2020/04/14/14/16/digital-art-5042881_1280.jpg" alt="Imagen 2">
+          <p class="carousel-item-title">Título de la canción 2</p>
+          <p class="carousel-item-artist">Artista 2</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.pixabay.com/photo/2021/09/15/01/41/demon-6625444_1280.jpg" alt="Imagen 3">
+          <p class="carousel-item-title">Título de la canción 2</p>
+          <p class="carousel-item-artist">Artista 2</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.pixabay.com/photo/2022/12/13/19/05/cyberpunk-7654046_1280.jpg" alt="Imagen 1">
+          <p class="carousel-item-title">Título de la canción 1</p>
+          <p class="carousel-item-artist">Artista 1</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.pixabay.com/photo/2020/04/14/14/16/digital-art-5042881_1280.jpg" alt="Imagen 2">
+          <p class="carousel-item-title">Título de la canción 2</p>
+          <p class="carousel-item-artist">Artista 2</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.pixabay.com/photo/2021/09/15/01/41/demon-6625444_1280.jpg" alt="Imagen 3">
+          <p class="carousel-item-title">Título de la canción 2</p>
+          <p class="carousel-item-artist">Artista 2</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.pixabay.com/photo/2022/12/13/19/05/cyberpunk-7654046_1280.jpg" alt="Imagen 1">
+          <p class="carousel-item-title">Título de la canción 2</p>
+          <p class="carousel-item-artist">Artista 2</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.pixabay.com/photo/2020/04/14/14/16/digital-art-5042881_1280.jpg" alt="Imagen 2">
+          <p class="carousel-item-title">Título de la canción 2</p>
+          <p class="carousel-item-artist">Artista 2</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.pixabay.com/photo/2021/09/15/01/41/demon-6625444_1280.jpg" alt="Imagen 3">
+          <p class="carousel-item-title">Título de la canción 2</p>
+          <p class="carousel-item-artist">Artista 2</p>
+        </div>
+      </div>
+    </div>
+
+
+
+      <!-- Secciòn de Novedades-->
+  <div class="featured-section">
+    <h2 class="section-title">Novedades</h2>
+
+    <div class="featured-carousel"  id="carousel-novedades">
+      <div class="carousel-item">
+        <img src="https://cdn.pixabay.com/photo/2022/12/13/19/05/cyberpunk-7654046_1280.jpg" alt="Imagen 1">
+        <p class="carousel-item-title">Título de la canción 1</p>
+        <p class="carousel-item-artist">Artista 1</p>
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.pixabay.com/photo/2020/04/14/14/16/digital-art-5042881_1280.jpg" alt="Imagen 2">
+        <p class="carousel-item-title">Título de la canción 2</p>
+        <p class="carousel-item-artist">Artista 2</p>
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.pixabay.com/photo/2021/09/15/01/41/demon-6625444_1280.jpg" alt="Imagen 3">
+        <p class="carousel-item-title">Título de la canción 2</p>
+        <p class="carousel-item-artist">Artista 2</p>
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.pixabay.com/photo/2022/12/13/19/05/cyberpunk-7654046_1280.jpg" alt="Imagen 1">
+        <p class="carousel-item-title">Título de la canción 2</p>
+        <p class="carousel-item-artist">Artista 2</p>
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.pixabay.com/photo/2020/04/14/14/16/digital-art-5042881_1280.jpg" alt="Imagen 2">
+        <p class="carousel-item-title">Título de la canción 2</p>
+        <p class="carousel-item-artist">Artista 2</p>
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.pixabay.com/photo/2021/09/15/01/41/demon-6625444_1280.jpg" alt="Imagen 3">
+        <p class="carousel-item-title">Título de la canción 2</p>
+        <p class="carousel-item-artist">Artista 2</p>
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.pixabay.com/photo/2022/12/13/19/05/cyberpunk-7654046_1280.jpg" alt="Imagen 1">
+        <p class="carousel-item-title">Título de la canción 1</p>
+        <p class="carousel-item-artist">Artista 1</p>
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.pixabay.com/photo/2020/04/14/14/16/digital-art-5042881_1280.jpg" alt="Imagen 2">
+        <p class="carousel-item-title">Título de la canción 2</p>
+        <p class="carousel-item-artist">Artista 2</p>
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.pixabay.com/photo/2021/09/15/01/41/demon-6625444_1280.jpg" alt="Imagen 3">
+        <p class="carousel-item-title">Título de la canción 2</p>
+        <p class="carousel-item-artist">Artista 2</p>
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.pixabay.com/photo/2022/12/13/19/05/cyberpunk-7654046_1280.jpg" alt="Imagen 1">
+        <p class="carousel-item-title">Título de la canción 2</p>
+        <p class="carousel-item-artist">Artista 2</p>
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.pixabay.com/photo/2020/04/14/14/16/digital-art-5042881_1280.jpg" alt="Imagen 2">
+        <p class="carousel-item-title">Título de la canción 2</p>
+        <p class="carousel-item-artist">Artista 2</p>
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.pixabay.com/photo/2021/09/15/01/41/demon-6625444_1280.jpg" alt="Imagen 3">
+        <p class="carousel-item-title">Título de la canción 2</p>
+        <p class="carousel-item-artist">Artista 2</p>
+      </div>
+    </div>
+  </div>
+</main>
+  
+
+  <!-- Footer, barra de Musica-->
+  <footer class="apple-music-footer">
+    <div class="player-controls">
+      <button class="previous-button">
+        <i class="fas fa-backward"></i>
+      </button>
+      <button class="play-pause-button">
+        <i class="fas fa-play"></i>
+      </button>
+      <button class="next-button">
+        <i class="fas fa-forward"></i>
+      </button>
+      <div class="song-info">
+        <div class="song-image">
+          <img src="https://cdn.pixabay.com/photo/2020/04/14/14/16/digital-art-5042881_1280.jpg" alt="Imagen de la canción">
+        </div>
+        <div class="song-details">
+          <p class="song-title">Canción actual</p>
+          <p class="song-artist">Artista</p>
+        </div>
+      </div>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+    </div>
+    <div class="library-options">
+      <button class="library-button">Biblioteca</button>
+      <button class="favorites-button">Favoritos</button>
+    </div>
+  </footer>
+
+  
+  
+  
+<!-- Scripts y Canva, diseño de los puntitos flotantes-->
+
+  <script src="Music.js"></script>
+  <script src="node_modules/particlesjs/src/particles.js"></script>
+</body>
+</html>
+
+
+
